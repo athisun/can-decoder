@@ -1,0 +1,129 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: ElmarMPPTC
+
+BO_ 1728 ElmarMPPTC_InputMeasurements: 8 ElmarMPPTC
+ SG_ InputVoltage : 0|32@1- (1,0) [0|0] "Volt" Vector__XXX
+ SG_ InputCurrent : 32|32@1- (1,0) [0|0] "Ampere" Vector__XXX
+
+BO_ 1729 ElmarMPPTC_OutputMeasurements: 8 ElmarMPPTC
+ SG_ OutputVoltae : 0|32@1- (1,0) [0|0] "Volt" Vector__XXX
+ SG_ OutputCurrent : 32|32@1- (1,0) [0|0] "Ampere" Vector__XXX
+
+BO_ 1730 ElmarMPPTC_Temperature: 8 ElmarMPPTC
+ SG_ MosfetTemperature : 0|32@1- (1,0) [0|0] "°C" Vector__XXX
+ SG_ ControllerTemperature : 32|32@1- (1,0) [0|0] "°C" Vector__XXX
+
+BO_ 1731 ElmarMPPTC_AuxiliaryPowerSupply: 8 ElmarMPPTC
+ SG_ Pwr12V : 0|32@1- (1,0) [0|0] "Volt" Vector__XXX
+ SG_ Pwr3V : 32|32@1- (1,0) [0|0] "Volt" Vector__XXX
+
+BO_ 1732 ElmarMPPTC_Limits: 8 ElmarMPPTC
+ SG_ MaxOutputVoltage : 0|32@1- (1,0) [0|0] "Volt" Vector__XXX
+ SG_ MaxInputCurrent : 32|32@1- (1,0) [0|0] "Ampere" Vector__XXX
+
+BO_ 1733 ElmarMPPTC_Status: 8 ElmarMPPTC
+ SG_ CanRxErrorCnt : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CanTxErrorCnt : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CanTxOverflowCnt : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ErrorFlagLowArrayPower : 24|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ErrorFlagMosfetOverheat : 25|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ErrorFlagBatteryLow : 26|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ErrorFlagBatteryFull : 27|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ErrorFlag12VUndervoltage : 28|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ErrorFlagReserved : 29|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ErrorFlagHwOvercurrent : 30|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ErrorFlagHwOvervoltage : 31|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ LimitFlagsInputCurrentMin : 32|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ LimitFlagsInputCurrentMax : 33|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ LimitFlagsOutputVoltageMax : 34|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ LimitFlagsMosfetTemperature : 35|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ LimitFlagsDutyCycleMin : 36|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ LimitFlagsDutyCycleMax : 37|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ LimitFlagsLocalMPPT : 38|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ LimitFlagsGlobalMPPT : 39|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Mode : 40|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ TestCounter : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1734 ElmarMPPTC_PowerConnector: 8 ElmarMPPTC
+ SG_ OutputVoltage : 0|32@1- (1,0) [0|0] "Volt" Vector__XXX
+ SG_ PowerConnectorTemperature : 32|32@1- (1,0) [0|0] "°C" Vector__XXX
+
+BO_ 1735 ElmarMPPTC_SweepMeasurements: 8 ElmarMPPTC
+ SG_ InputVoltageSweep : 0|32@1- (1,0) [0|0] "Volt" Vector__XXX
+ SG_ InputCurrentSweep : 32|32@1- (1,0) [0|0] "Ampere" Vector__XXX
+
+BO_ 1736 ElmarMPPTC_ModeInput: 8 ElmarMPPTC
+ SG_ ModeInput : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1737 ElmarMPPTC_SweepPeriodInput: 8 ElmarMPPTC
+ SG_ SweepPeriodInput : 0|8@1+ (1,0) [0|0] "seconds" Vector__XXX
+
+BO_ 1738 ElmarMPPTC_MaxOutputVoltageInput: 8 ElmarMPPTC
+ SG_ MaxOutputVoltageInput : 0|32@1- (1,0) [0|0] "Volt" Vector__XXX
+
+BO_ 1739 ElmarMPPTC_MaxInputCurrentInput: 8 ElmarMPPTC
+
+BO_ 1740 ElmarMPPTC_Reserved1: 8 ElmarMPPTC
+
+BO_ 1741 ElmarMPPTC_Reserved2: 8 ElmarMPPTC
+
+BO_ 1742 ElmarMPPTC_Reserved3: 8 ElmarMPPTC
+
+BO_ 1743 ElmarMPPTC_Reserved4: 8 ElmarMPPTC
+
+
+
+CM_ SG_ 1733 Mode "0 = standby, 1 = local tracking";
+CM_ SG_ 1733 TestCounter "+1 every second";
+CM_ BO_ 1735 "Only during sweeps, 100Hz send rate";
+CM_ SG_ 1736 ModeInput "0 = standby, 1 = local tracking";
+SIG_VALTYPE_ 1728 InputVoltage : 1;
+SIG_VALTYPE_ 1728 InputCurrent : 1;
+SIG_VALTYPE_ 1729 OutputVoltae : 1;
+SIG_VALTYPE_ 1729 OutputCurrent : 1;
+SIG_VALTYPE_ 1730 MosfetTemperature : 1;
+SIG_VALTYPE_ 1730 ControllerTemperature : 1;
+SIG_VALTYPE_ 1731 Pwr12V : 1;
+SIG_VALTYPE_ 1731 Pwr3V : 1;
+SIG_VALTYPE_ 1732 MaxOutputVoltage : 1;
+SIG_VALTYPE_ 1732 MaxInputCurrent : 1;
+SIG_VALTYPE_ 1734 OutputVoltage : 1;
+SIG_VALTYPE_ 1734 PowerConnectorTemperature : 1;
+SIG_VALTYPE_ 1735 InputVoltageSweep : 1;
+SIG_VALTYPE_ 1735 InputCurrentSweep : 1;
+SIG_VALTYPE_ 1738 MaxOutputVoltageInput : 1;
+

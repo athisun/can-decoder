@@ -1,0 +1,223 @@
+VERSION ""
+
+
+NS_ :
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: WaveSculptor22_Left EVDriverControls
+
+
+BO_ 96 WS22Left_IDInfo: 8 WaveSculptor22_Left
+ SG_ TritiumID : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SerialNumber : 32|32@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 97 WS22Left_Status: 8 WaveSculptor22_Left
+ SG_ LimitFlags : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ErrorFlags : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ActiveMotor : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ TxErrorCount : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ RxErrorCount : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 98 WS22Left_BusMeasurement: 8 WaveSculptor22_Left
+ SG_ BusVoltage : 0|32@1- (1,0) [0|0] "V" Vector__XXX
+ SG_ BusCurrent : 32|32@1- (1,0) [0|0] "A" Vector__XXX
+
+BO_ 99 WS22Left_VelocityMeasurement: 8 WaveSculptor22_Left
+ SG_ MotorVelocity : 0|32@1- (1,0) [0|0] "rpm" Vector__XXX
+ SG_ VehicleVelocity : 32|32@1- (1,0) [0|0] "m/s" Vector__XXX
+
+BO_ 100 WS22Left_PhaseCurrentMeasurement: 8 WaveSculptor22_Left
+ SG_ PhaseCurrentB : 0|32@1- (1,0) [0|0] "A_rms" Vector__XXX
+ SG_ PhaseCurrentC : 32|32@1- (1,0) [0|0] "A_rms" Vector__XXX
+
+BO_ 101 WS22Left_MotorVoltageVectorMeasurement: 8 WaveSculptor22_Left
+ SG_ Vq : 0|32@1- (1,0) [0|0] "V" Vector__XXX
+ SG_ Vd : 32|32@1- (1,0) [0|0] "V" Vector__XXX
+
+BO_ 102 WS22Left_MotorCurrentVectorMeasurement: 8 WaveSculptor22_Left
+ SG_ Iq : 0|32@1- (1,0) [0|0] "A" Vector__XXX
+ SG_ Id : 32|32@1- (1,0) [0|0] "A" Vector__XXX
+
+BO_ 103 WS22Left_MotorBackEMFMeasurementPrediction: 8 WaveSculptor22_Left
+ SG_ BEMFq : 0|32@1- (1,0) [0|0] "V" Vector__XXX
+ SG_ BEMFd : 32|32@1- (1,0) [0|0] "V" Vector__XXX
+
+BO_ 104 WS22Left_VoltageRail15VMeasurement: 8 WaveSculptor22_Left
+ SG_ Supply15V : 32|32@1- (1,0) [0|0] "V" Vector__XXX
+ SG_ ReservedSupply15V : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 105 WS22Left_VoltageRail3V31V9Measurement: 8 WaveSculptor22_Left
+ SG_ Supply1V9 : 0|32@1- (1,0) [0|0] "V" Vector__XXX
+ SG_ Supply3V3 : 32|32@1- (1,0) [0|0] "V" Vector__XXX
+
+BO_ 106 WS22Left_Reserved0A: 8 WaveSculptor22_Left
+ SG_ Reserved0A0 : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Reserved0A1 : 32|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 107 WS22Left_HeatsinkMotorTempMeasurement: 8 WaveSculptor22_Left
+ SG_ MotorTemp : 0|32@1- (1,0) [0|0] "C" Vector__XXX
+ SG_ HeatsinkTemp : 32|32@1- (1,0) [0|0] "C" Vector__XXX
+
+BO_ 108 WS22Left_DspBoardTempMeasurement: 8 WaveSculptor22_Left
+ SG_ DspBoardTemp : 0|32@1- (1,0) [0|0] "C" Vector__XXX
+ SG_ ReservedDspBoardTemp : 32|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 109 WS22Left_Reserved0D: 8 WaveSculptor22_Left
+ SG_ Reserved0D0 : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Reserved0D1 : 32|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 110 WS22Left_OdometerBusAhMeasurement: 8 WaveSculptor22_Left
+ SG_ Odometer : 0|32@1- (1,0) [0|0] "m" Vector__XXX
+ SG_ DCBusAh : 32|32@1- (1,0) [0|0] "Ah" Vector__XXX
+
+BO_ 119 WS22Left_SlipSpeedMeasurement: 8 WaveSculptor22_Left
+ SG_ SlipSpeed : 32|32@1- (1,0) [0|0] "Hz" Vector__XXX
+ SG_ ReservedSlipSpeed : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 33 WS22Left_MotorDriveCommand: 8 EVDriverControls
+ SG_ MotorVelocityCommand : 0|32@1- (1,0) [0|0] "rpm" Vector__XXX
+ SG_ MotorCurrentCommand : 32|32@1- (1,0) [0|0] "%" Vector__XXX
+
+BO_ 34 WS22Left_MotorPowerCommand: 8 EVDriverControls
+ SG_ ReservedMotorPowerCommand : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ BusCurrentCommand : 32|32@1- (1,0) [0|0] "%" Vector__XXX
+
+BO_ 35 WS22Left_ResetCommand: 8 EVDriverControls
+ SG_ UnusedResetCommand0 : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ UnusedResetCommand1 : 32|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 114 WS22Left_ActiveMotorChange: 8 EVDriverControls
+ SG_ ActiveMotorCommand : 0|48@1+ (1,0) [0|0] "ASCII" Vector__XXX
+ SG_ ConfigurationAccessKey : 48|16@1+ (1,0) [0|0] "" Vector__XXX
+
+CM_ BU_ WaveSculptor22_Left "";
+CM_ BO_ 96 "The periodic broadcast of this message cannot be disabled. It is needed to find the motor controller on the network if the base address is lost or mis-configured.";
+CM_ SG_ 96 TritiumID "Device identifier. 0x00004003";
+CM_ SG_ 96 SerialNumber "Device serial number, allocated at manufacture.";
+CM_ SG_ 97 LimitFlags "Flags indicate which control loop is limiting the output current of the motor controller.";
+CM_ SG_ 97 ErrorFlags "Flags indicate errors.";
+CM_ SG_ 97 ActiveMotor "The index of the active motor currently being used.";
+CM_ SG_ 97 TxErrorCount "The DSP CAN transmission error counter (CAN 2.0)";
+CM_ SG_ 97 RxErrorCount "The DSP CAN receive error counter (CAN 2.0)";
+CM_ SG_ 98 BusVoltage "DC bus voltage at the controller.";
+CM_ SG_ 98 BusCurrent "Current drawn from the DC bus by the controller.";
+CM_ SG_ 99 MotorVelocity "Motor angular frequency in revolutions per minute.";
+CM_ SG_ 99 VehicleVelocity "Vehicle velocity in metres / second.";
+CM_ BO_ 100 "While the motor is rotating at speed these two currents should be equal. At extremely low commutation speeds these two currents will only match in one third of the motor position, the other two thirds will involve current also flowing in Phase A.";
+CM_ SG_ 100 PhaseCurrentB "RMS current in motor Phase B.";
+CM_ SG_ 100 PhaseCurrentC "RMS current in motor Phase C.";
+CM_ SG_ 101 Vq "Imaginary component of the applied non-rotating voltage vector to the motor.";
+CM_ SG_ 101 Vd "Real component of the applied non-rotating voltage vector to the motor.";
+CM_ SG_ 102 Iq "Imaginary component of the applied non-rotating current vector to the motor. This current produces torque in the motor and should be in phase with the back-EMF of the motor";
+CM_ SG_ 102 Id "Real component of the applied non-rotating current vector to the motor. This vector represents the field current of the motor.";
+CM_ SG_ 103 BEMFq "The peak of the phase to neutral motor voltage.";
+CM_ SG_ 103 BEMFd "By definition this value is always 0V.";
+CM_ SG_ 104 Supply15V "Actual voltage level of the 15V power rail.";
+CM_ SG_ 105 Supply1V9 "Actual voltage level of the 1.9V DSP power rail.";
+CM_ SG_ 105 Supply3V3 "Actual voltage level of the 3.3V power rail.";
+CM_ SG_ 107 MotorTemp "Internal temperature of the motor";
+CM_ SG_ 107 HeatsinkTemp "Internal temperature of Heat-sink (case).";
+CM_ SG_ 108 DspBoardTemp "Temperature of the DSP board.";
+CM_ SG_ 110 Odometer "Distance the vehicle has travelled since reset.";
+CM_ SG_ 110 DCBusAh "Charge flow into the controller DC bus from the time of reset.";
+CM_ SG_ 119 SlipSpeed "Slip speed when driving an induction motor.";
+CM_ SG_ 33 MotorVelocityCommand "Desired motor velocity set point in rpm.";
+CM_ SG_ 33 MotorCurrentCommand "Desired motor current set point as a percentage of maximum current setting.";
+CM_ SG_ 34 BusCurrentCommand "Desired set point of current drawn from the bus by the controller as a percentage of absolute bus current limit.";
+CM_ BO_ 35 "Send a command from this address to reset the software in the WaveSculptor.";
+CM_ BO_ 146 "Send this command to change the active motor. Note that the controller will save the active motor to the EEPROM config memory, so what you send will survive a reset. This has a downside that you don't want to be sending it constantly, as you'll wear out the EEPROM. Example to set the active motor to motor slot 5: CAN ID = 0x412, Data = 0x00 05 54 4F 4D 54 43 41";
+CM_ SG_ 146 ActiveMotorCommand "Must spell \"ACTMOT\" in ASCII (0x54 4F 4D 54 43 41).";
+CM_ SG_ 146 ConfigurationAccessKey "Desired active motor (0 to 9).";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 2 50000;
+BA_DEF_ BU_  "GenNodAutoGenSnd" ENUM  "No","Yes";
+BA_DEF_ BU_  "GenNodAutoGenDsp" ENUM  "No","Yes";
+BA_DEF_  "GenEnvVarEndingDsp" STRING ;
+BA_DEF_  "GenEnvVarEndingSnd" STRING ;
+BA_DEF_  "GenEnvVarPrefix" STRING ;
+BA_DEF_DEF_  "GenMsgCycleTime" 100;
+BA_DEF_DEF_  "GenNodAutoGenSnd" "Yes";
+BA_DEF_DEF_  "GenNodAutoGenDsp" "Yes";
+BA_DEF_DEF_  "GenEnvVarEndingDsp" "Dsp";
+BA_DEF_DEF_  "GenEnvVarEndingSnd" "Snd";
+BA_DEF_DEF_  "GenEnvVarPrefix" "Env";
+BA_ "GenMsgCycleTime" BO_ 96 1000;
+BA_ "GenMsgCycleTime" BO_ 97 200;
+BA_ "GenMsgCycleTime" BO_ 98 200;
+BA_ "GenMsgCycleTime" BO_ 99 200;
+BA_ "GenMsgCycleTime" BO_ 100 200;
+BA_ "GenMsgCycleTime" BO_ 101 200;
+BA_ "GenMsgCycleTime" BO_ 102 200;
+BA_ "GenMsgCycleTime" BO_ 103 200;
+BA_ "GenMsgCycleTime" BO_ 104 1000;
+BA_ "GenMsgCycleTime" BO_ 105 1000;
+BA_ "GenMsgCycleTime" BO_ 106 0;
+BA_ "GenMsgCycleTime" BO_ 107 1000;
+BA_ "GenMsgCycleTime" BO_ 108 1000;
+BA_ "GenMsgCycleTime" BO_ 109 1000;
+BA_ "GenMsgCycleTime" BO_ 110 1000;
+BA_ "GenMsgCycleTime" BO_ 119 200;
+BA_ "GenMsgCycleTime" BO_ 33 250;
+SIG_VALTYPE_ 98 BusVoltage : 1;
+SIG_VALTYPE_ 98 BusCurrent : 1;
+SIG_VALTYPE_ 99 MotorVelocity : 1;
+SIG_VALTYPE_ 99 VehicleVelocity : 1;
+SIG_VALTYPE_ 100 PhaseCurrentB : 1;
+SIG_VALTYPE_ 100 PhaseCurrentC : 1;
+SIG_VALTYPE_ 101 Vq : 1;
+SIG_VALTYPE_ 101 Vd : 1;
+SIG_VALTYPE_ 102 Iq : 1;
+SIG_VALTYPE_ 102 Id : 1;
+SIG_VALTYPE_ 103 BEMFq : 1;
+SIG_VALTYPE_ 103 BEMFd : 1;
+SIG_VALTYPE_ 104 Supply15V : 1;
+SIG_VALTYPE_ 104 ReservedSupply15V : 1;
+SIG_VALTYPE_ 105 Supply1V9 : 1;
+SIG_VALTYPE_ 105 Supply3V3 : 1;
+SIG_VALTYPE_ 106 Reserved0A0 : 1;
+SIG_VALTYPE_ 106 Reserved0A1 : 1;
+SIG_VALTYPE_ 107 MotorTemp : 1;
+SIG_VALTYPE_ 107 HeatsinkTemp : 1;
+SIG_VALTYPE_ 108 DspBoardTemp : 1;
+SIG_VALTYPE_ 108 ReservedDspBoardTemp : 1;
+SIG_VALTYPE_ 109 Reserved0D0 : 1;
+SIG_VALTYPE_ 109 Reserved0D1 : 1;
+SIG_VALTYPE_ 110 Odometer : 1;
+SIG_VALTYPE_ 110 DCBusAh : 1;
+SIG_VALTYPE_ 119 SlipSpeed : 1;
+SIG_VALTYPE_ 119 ReservedSlipSpeed : 1;
+SIG_VALTYPE_ 33 MotorVelocityCommand : 1;
+SIG_VALTYPE_ 33 MotorCurrentCommand : 1;
+SIG_VALTYPE_ 34 ReservedMotorPowerCommand : 1;
+SIG_VALTYPE_ 34 BusCurrentCommand : 1;
+SIG_VALTYPE_ 35 UnusedResetCommand0 : 1;
+SIG_VALTYPE_ 35 UnusedResetCommand1 : 1;
+

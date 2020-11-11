@@ -1,0 +1,402 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: TritiumBMS EVDriverControls
+
+
+BO_ 1285 DriverControlsSwitchPosition: 8 EVDriverControls
+ SG_ SwitchPosition : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ UnusedSwitchPosition1 : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ UnusedSwitchPosition2 : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ UnusedSwitchPosition3 : 48|16@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1536 BMUHeartbeatSerialNumber: 8 TritiumBMS
+ SG_ Heartbeat : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SerialNumber : 32|32@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1537 CMU1SerialTemperature: 8 TritiumBMS
+ SG_ CMU1SerialNumber : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CMU1PCBTemperature : 32|16@1- (1,0) [0|0] "C" Vector__XXX
+ SG_ CMU1CellTemperature : 48|16@1- (1,0) [0|0] "C" Vector__XXX
+
+BO_ 1538 CMU1Voltages0to3: 8 TritiumBMS
+ SG_ CMU1Cell0Voltage : 0|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ CMU1Cell1Voltage : 16|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ CMU1Cell3Voltage : 48|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ CMU1Cell2Voltage : 32|16@1- (1,0) [0|0] "mV" Vector__XXX
+
+BO_ 1539 CMU1Voltages4to7: 8 TritiumBMS
+ SG_ CMU1Cell4Voltage : 0|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ CMU1Cell5Voltage : 16|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ CMU1Cell6Voltage : 32|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ CMU1Cell7Voltage : 48|16@1- (1,0) [0|0] "mV" Vector__XXX
+
+BO_ 1540 CMU2SerialTemperature: 8 TritiumBMS
+ SG_ CMU2SerialNumber : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CMU2PCBTemperature : 32|16@1- (1,0) [0|0] "C" Vector__XXX
+ SG_ CMU2CellTemperature : 48|16@1- (1,0) [0|0] "C" Vector__XXX
+
+BO_ 1541 CMU2Voltages0to3: 8 TritiumBMS
+ SG_ CMU2Cell0Voltage : 0|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ CMU2Cell1Voltage : 16|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ CMU2Cell2Voltage : 32|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ CMU2Cell3Voltage : 48|16@1- (1,0) [0|0] "mV" Vector__XXX
+
+BO_ 1542 CMU2Voltages4to7: 8 TritiumBMS
+ SG_ CMU2Cell4Voltage : 0|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ CMU2Cell5Voltage : 16|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ CMU2Cell6Voltage : 32|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ CMU2Cell7Voltage : 48|16@1- (1,0) [0|0] "mV" Vector__XXX
+
+BO_ 1543 CMU3SerialTemperature: 8 TritiumBMS
+ SG_ CMU3SerialNumber : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CMU3PCBTemperature : 32|16@1- (1,0) [0|0] "C" Vector__XXX
+ SG_ CMU3CellTemperature : 48|16@1- (1,0) [0|0] "C" Vector__XXX
+
+BO_ 1544 CMU3Voltages0to3: 8 TritiumBMS
+ SG_ CMU3Cell0Voltage : 0|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ CMU3Cell1Voltage : 16|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ CMU3Cell2Voltage : 32|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ CMU3Cell3Voltage : 48|16@1- (1,0) [0|0] "mV" Vector__XXX
+
+BO_ 1545 CMU3Voltages4to7: 8 TritiumBMS
+ SG_ CMU3Cell4Voltage : 0|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ CMU3Cell5Voltage : 16|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ CMU3Cell6Voltage : 32|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ CMU3Cell7Voltage : 48|16@1- (1,0) [0|0] "mV" Vector__XXX
+
+BO_ 1546 CMU4SerialTemperature: 8 TritiumBMS
+ SG_ CMU4SerialNumber : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CMU4PCBTemperature : 32|16@1- (1,0) [0|0] "C" Vector__XXX
+ SG_ CMU4CellTemperature : 48|16@1- (1,0) [0|0] "C" Vector__XXX
+
+BO_ 1547 CMU4Voltages0to3: 8 TritiumBMS
+ SG_ CMU4Cell0Voltage : 0|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ CMU4Cell1Voltage : 16|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ CMU4Cell2Voltage : 32|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ CMU4Cell3Voltage : 48|16@1- (1,0) [0|0] "mV" Vector__XXX
+
+BO_ 1548 CMU4Voltages4to7: 8 TritiumBMS
+ SG_ CMU4Cell4Voltage : 0|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ CMU4Cell5Voltage : 16|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ CMU4Cell6Voltage : 32|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ CMU4Cell7Voltage : 48|16@1- (1,0) [0|0] "mV" Vector__XXX
+
+BO_ 1549 CMU5SerialTemperature: 8 TritiumBMS
+ SG_ CMU5SerialNumber : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CMU5PCBTemperature : 32|16@1- (1,0) [0|0] "C" Vector__XXX
+ SG_ CMU5CellTemperature : 48|16@1- (1,0) [0|0] "C" Vector__XXX
+
+BO_ 1550 CMU5Voltages0to3: 8 TritiumBMS
+ SG_ CMU5Cell0Voltage : 0|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ CMU5Cell1Voltage : 16|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ CMU5Cell2Voltage : 32|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ CMU5Cell3Voltage : 48|16@1- (1,0) [0|0] "mV" Vector__XXX
+
+BO_ 1551 CMU5Voltages4to7: 8 TritiumBMS
+ SG_ CMU5Cell4Voltage : 0|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ CMU5Cell5Voltage : 16|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ CMU5Cell6Voltage : 32|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ CMU5Cell7Voltage : 48|16@1- (1,0) [0|0] "mV" Vector__XXX
+
+BO_ 1780 PackStateOfCharge: 8 TritiumBMS
+ SG_ StateOfChargeAh : 0|32@1- (1,0) [0|0] "Ah" Vector__XXX
+ SG_ StateOfChargePercent : 32|32@1- (1,0) [0|0] "%" Vector__XXX
+
+BO_ 1781 PackBalanceStateOfCharge: 8 TritiumBMS
+ SG_ BalanceStateOfChargeAh : 0|32@1- (1,0) [0|0] "Ah" Vector__XXX
+ SG_ BalanceStateOfChargePercent : 32|32@1- (1,0) [0|0] "%" Vector__XXX
+
+BO_ 1782 ChargerControlInformation: 8 TritiumBMS
+ SG_ ChargingCellVoltageError : 0|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ CellTemperatureMargin : 16|16@1- (1,0) [0|0] "C" Vector__XXX
+ SG_ DischargingCellVoltageError : 32|16@1- (1,0) [0|0] "mV" Vector__XXX
+ SG_ TotalPackCapacity : 48|16@1+ (1,0) [0|0] "Ah" Vector__XXX
+
+BO_ 1783 PrechargeStatus: 8 TritiumBMS
+ SG_ PrechargeContactorDriverStatus : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ PrechargeState : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DeprecatedSupply12V : 16|16@1+ (1,0) [0|0] "mV" Vector__XXX
+ SG_ UnusedPrecharge : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ PrechargeTimerState : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ PrechargeTimerCounter : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1784 MinMaxCellVoltage: 8 TritiumBMS
+ SG_ MinCellVoltage : 0|16@1+ (1,0) [0|0] "mV" Vector__XXX
+ SG_ MaxCellVoltage : 16|16@1+ (1,0) [0|0] "mV" Vector__XXX
+ SG_ MinCellVoltageCMU : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MinCellVoltagePosition : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MaxCellVoltageCMU : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MaxCellVoltagePosition : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1785 MinMaxCellTemperature: 8 TritiumBMS
+ SG_ MinCellTemperature : 0|16@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ MaxCellTemperature : 16|16@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ MinCellTemperatureCMU : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ UnusedMinMaxCellTemp5 : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MaxCellTemperatureCMU : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ UnusedMinMaxCellTemp7 : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1786 BatteryPackVoltageCurrent: 8 TritiumBMS
+ SG_ BatteryVoltage : 0|32@1+ (1,0) [0|0] "mV" Vector__XXX
+ SG_ BatteryCurrent : 32|32@1- (1,0) [0|0] "mA" Vector__XXX
+
+BO_ 1787 BatteryPackStatus: 8 TritiumBMS
+ SG_ BalanceVoltageThresholdRising : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BalanceVoltageThresholdFalling : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BatteryPackStatusFlags : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CMUCount : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMUFirmwareBuildNumber : 48|16@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1788 BatteryPackFanStatus: 8 TritiumBMS
+ SG_ FanSpeed0 : 0|16@1+ (1,0) [0|0] "rpm" Vector__XXX
+ SG_ FanSpeed1 : 16|16@1+ (1,0) [0|0] "rpm" Vector__XXX
+ SG_ FansContactors12VCurrent : 32|16@1+ (1,0) [0|0] "mA" Vector__XXX
+ SG_ CMU12VCurrent : 48|16@1+ (1,0) [0|0] "mA" Vector__XXX
+
+BO_ 1789 ExtendedBatteryPackStatus: 8 TritiumBMS
+ SG_ ExtendedBatteryPackStatusFlags : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMUHardwareVersion : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMUModelID : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ UnusedExtendedBatteryPackStatus : 48|16@1+ (1,0) [0|0] "" Vector__XXX
+
+
+
+CM_ SG_ 1285 SwitchPosition "0x0020 = Ignition Run, 0x0040 = Ignition Start";
+CM_ SG_ 1285 UnusedSwitchPosition1 "Unused.";
+CM_ SG_ 1285 UnusedSwitchPosition2 "Unused.";
+CM_ SG_ 1285 UnusedSwitchPosition3 "Unused.";
+CM_ BO_ 1536 "This packet is transmitted by the BMU and allows it to be located and identified on the CAN bus. It contains an identifying string, and the serial number of the BMU device.";
+CM_ SG_ 1536 Heartbeat "v5 and later: Device ID: 0x00001000. v4 and earlier: ASCII ID string: 'T', '0', '6', '7'.";
+CM_ SG_ 1536 SerialNumber "Device serial number as programmed at the factory.";
+CM_ BO_ 1537 "These packets are transmitted by the CMUs and contain the telemetry values from the cells. The BMU will relay these packets through to the vehicle CAN bus if configured to do so – this is enabled by default.";
+CM_ SG_ 1537 CMU1SerialNumber "CMU serial number (allocated at factory).";
+CM_ SG_ 1537 CMU1PCBTemperature "PCB temperature (1/10th ï¿½C).";
+CM_ SG_ 1537 CMU1CellTemperature "Cell temperature (1/10th ï¿½C).";
+CM_ BO_ 1538 "These packets are transmitted by the CMUs and contain the telemetry values from the cells. The BMU will relay these packets through to the vehicle CAN bus if configured to do so – this is enabled by default.";
+CM_ SG_ 1538 CMU1Cell0Voltage "Cell 0 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ SG_ 1538 CMU1Cell1Voltage "Cell 1 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ SG_ 1538 CMU1Cell3Voltage "Cell 2 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ SG_ 1538 CMU1Cell2Voltage "Cell 3 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ BO_ 1539 "These packets are transmitted by the CMUs and contain the telemetry values from the cells. The BMU will relay these packets through to the vehicle CAN bus if configured to do so – this is enabled by default.";
+CM_ SG_ 1539 CMU1Cell4Voltage "Cell 4 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ SG_ 1539 CMU1Cell5Voltage "Cell 5 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ SG_ 1539 CMU1Cell6Voltage "Cell 6 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ SG_ 1539 CMU1Cell7Voltage "Cell 7 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ BO_ 1540 "These packets are transmitted by the CMUs and contain the telemetry values from the cells. The BMU will relay these packets through to the vehicle CAN bus if configured to do so – this is enabled by default.";
+CM_ SG_ 1540 CMU2SerialNumber "CMU serial number (allocated at factory).";
+CM_ SG_ 1540 CMU2PCBTemperature "PCB temperature (1/10th ï¿½C).";
+CM_ SG_ 1540 CMU2CellTemperature "Cell temperature (1/10th ï¿½C).";
+CM_ BO_ 1541 "These packets are transmitted by the CMUs and contain the telemetry values from the cells. The BMU will relay these packets through to the vehicle CAN bus if configured to do so – this is enabled by default.";
+CM_ SG_ 1541 CMU2Cell0Voltage "Cell 0 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ SG_ 1541 CMU2Cell1Voltage "Cell 1 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ SG_ 1541 CMU2Cell2Voltage "Cell 2 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ SG_ 1541 CMU2Cell3Voltage "Cell 3 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ BO_ 1542 "These packets are transmitted by the CMUs and contain the telemetry values from the cells. The BMU will relay these packets through to the vehicle CAN bus if configured to do so – this is enabled by default.";
+CM_ SG_ 1542 CMU2Cell4Voltage "Cell 4 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ SG_ 1542 CMU2Cell5Voltage "Cell 5 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ SG_ 1542 CMU2Cell6Voltage "Cell 6 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ SG_ 1542 CMU2Cell7Voltage "Cell 7 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ BO_ 1543 "These packets are transmitted by the CMUs and contain the telemetry values from the cells. The BMU will relay these packets through to the vehicle CAN bus if configured to do so – this is enabled by default.";
+CM_ SG_ 1543 CMU3SerialNumber "CMU serial number (allocated at factory).";
+CM_ SG_ 1543 CMU3PCBTemperature "PCB temperature (1/10th ï¿½C).";
+CM_ SG_ 1543 CMU3CellTemperature "Cell temperature (1/10th ï¿½C).";
+CM_ BO_ 1544 "These packets are transmitted by the CMUs and contain the telemetry values from the cells. The BMU will relay these packets through to the vehicle CAN bus if configured to do so – this is enabled by default.";
+CM_ SG_ 1544 CMU3Cell0Voltage "Cell 0 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ SG_ 1544 CMU3Cell1Voltage "Cell 1 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ SG_ 1544 CMU3Cell2Voltage "Cell 2 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ SG_ 1544 CMU3Cell3Voltage "Cell 3 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ BO_ 1545 "These packets are transmitted by the CMUs and contain the telemetry values from the cells. The BMU will relay these packets through to the vehicle CAN bus if configured to do so – this is enabled by default.";
+CM_ SG_ 1545 CMU3Cell4Voltage "Cell 4 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ SG_ 1545 CMU3Cell5Voltage "Cell 5 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ SG_ 1545 CMU3Cell6Voltage "Cell 6 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ SG_ 1545 CMU3Cell7Voltage "Cell 7 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ BO_ 1546 "These packets are transmitted by the CMUs and contain the telemetry values from the cells. The BMU will relay these packets through to the vehicle CAN bus if configured to do so – this is enabled by default.";
+CM_ SG_ 1546 CMU4SerialNumber "CMU serial number (allocated at factory).";
+CM_ SG_ 1546 CMU4PCBTemperature "PCB temperature (1/10th ï¿½C).";
+CM_ SG_ 1546 CMU4CellTemperature "Cell temperature (1/10th ï¿½C).";
+CM_ BO_ 1547 "These packets are transmitted by the CMUs and contain the telemetry values from the cells. The BMU will relay these packets through to the vehicle CAN bus if configured to do so – this is enabled by default.";
+CM_ SG_ 1547 CMU4Cell0Voltage "Cell 0 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ SG_ 1547 CMU4Cell1Voltage "Cell 1 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ SG_ 1547 CMU4Cell2Voltage "Cell 2 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ SG_ 1547 CMU4Cell3Voltage "Cell 3 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ BO_ 1548 "These packets are transmitted by the CMUs and contain the telemetry values from the cells. The BMU will relay these packets through to the vehicle CAN bus if configured to do so – this is enabled by default.";
+CM_ SG_ 1548 CMU4Cell4Voltage "Cell 4 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ SG_ 1548 CMU4Cell5Voltage "Cell 5 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ SG_ 1548 CMU4Cell6Voltage "Cell 6 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ SG_ 1548 CMU4Cell7Voltage "Cell 7 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ BO_ 1549 "These packets are transmitted by the CMUs and contain the telemetry values from the cells. The BMU will relay these packets through to the vehicle CAN bus if configured to do so – this is enabled by default.";
+CM_ SG_ 1549 CMU5SerialNumber "CMU serial number (allocated at factory).";
+CM_ SG_ 1549 CMU5PCBTemperature "PCB temperature (1/10th ï¿½C).";
+CM_ SG_ 1549 CMU5CellTemperature "Cell temperature (1/10th ï¿½C).";
+CM_ BO_ 1550 "These packets are transmitted by the CMUs and contain the telemetry values from the cells. The BMU will relay these packets through to the vehicle CAN bus if configured to do so – this is enabled by default.";
+CM_ SG_ 1550 CMU5Cell0Voltage "Cell 0 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ SG_ 1550 CMU5Cell1Voltage "Cell 1 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ SG_ 1550 CMU5Cell2Voltage "Cell 2 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ SG_ 1550 CMU5Cell3Voltage "Cell 3 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ BO_ 1551 "These packets are transmitted by the CMUs and contain the telemetry values from the cells. The BMU will relay these packets through to the vehicle CAN bus if configured to do so – this is enabled by default.";
+CM_ SG_ 1551 CMU5Cell4Voltage "Cell 4 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ SG_ 1551 CMU5Cell5Voltage "Cell 5 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ SG_ 1551 CMU5Cell6Voltage "Cell 6 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ SG_ 1551 CMU5Cell7Voltage "Cell 7 voltage (mV). +ve = OK, -ve = channel mismatch.";
+CM_ BO_ 1780 "This packet is transmitted by the BMU to show the current state of charge during normal pack operation.";
+CM_ SG_ 1780 StateOfChargeAh "Shows Ah consumed from the pack. 0 = Full, and counts upwards towards the user-set pack capacity number as Ah are used. Resets to 0 when max cell reaches balance threshold.";
+CM_ SG_ 1780 StateOfChargePercent "Shows the SOC as a percentage. 100% = full, 0% = empty.";
+CM_ BO_ 1781 "This packet is transmitted by the BMU to show the current state of cell mismatch during balancing at top of charge.";
+CM_ SG_ 1781 BalanceStateOfChargeAh "Shows Ah supplied to the pack since the first cell began balancing. This number will continue to count up until all cells in the pack are balancing, therefore showing the Ah mismatch that has been corrected during this balancing session.";
+CM_ SG_ 1781 BalanceStateOfChargePercent "Shows the balancing SOC as a percentage, in other words, the percentage mismatch between cells this session.";
+CM_ BO_ 1782 "This packet is transmitted by the BMU to allow an external charger to control itself based in detailed cell information from the BMS, without having to know about the various user-configured cell setup parameters.";
+CM_ SG_ 1782 ChargingCellVoltageError "Charging cell voltage error (mV). This value is the user-configured ï¿½Balance Thresholdï¿½ voltage minus the maximum cell voltage. The charger should run a charge current control loop to try and bring this value to 0mV. An Integral type control loop is suggested.";
+CM_ SG_ 1782 CellTemperatureMargin "Cell temperature margin (1 /10th ï¿½C). This value is the maximum cell temperature minus the user-configured ï¿½Maximum Cell Temperatureï¿½ limit. The charger should reduce charge current such that this value will never reach 0, as the BMS will disconnect the pack if the maximum cell temperature is exceeded. A Proportional type control loop is suggested.";
+CM_ SG_ 1782 DischargingCellVoltageError "Discharging cell voltage error (mV). This value is the user-configured ï¿½Zero SOC Thresholdï¿½ voltage minus the minimum cell voltage. This value can be used by devices that are discharging the battery (eg motor controllers in vehicles) to gradually limit their consumption as the minimum cell approaches being fully discharged.";
+CM_ SG_ 1782 TotalPackCapacity "Total pack capacity (Ah). This value can be used by the charger / discharger to calculate control loop gain constants for the installation. It is simply the user-set configuration value rounded to the nearest Ah.";
+CM_ BO_ 1783 "This packet is transmitted by the BMU to indicate the current state of the precharge system.";
+CM_ SG_ 1783 PrechargeContactorDriverStatus "Precharge contactor driver status:
+0x01 = Error status of contactor 1 driver (0 = OK, 1 = error )
+0x02 = Error status of contactor 2 driver
+0x04 = Output status of contactor 1 driver (0 = Off, 1 = On)
+0x08 = Output status of contactor 2 driver
+0x10 = 12V contactor supply voltage OK (0 = Fault, 1 = OK)
+0x20 = Error status of contactor 3 driver
+0x40 = Output status of contactor 3 driver
+0x80 = Unused";
+CM_ SG_ 1783 PrechargeState "Precharge state (in order of normal appearance when starting):
+0 = Error
+1 = Idle
+5 = Enable Pack
+2 = Measure
+3 = Precharge
+4 = Run";
+CM_ SG_ 1783 DeprecatedSupply12V "12V contactor supply voltage, mV (only on v4 or earlier BMU) for v5 or later BMU, refer to binary bit 0x10 in data_u8[0].";
+CM_ SG_ 1783 UnusedPrecharge "Unused, reports as 0x0000.";
+CM_ SG_ 1783 PrechargeTimerState "0x01 = Precharge timer elapsed (Don't care if timeout disabled). 0x00 = Precharge timer not elapsed.";
+CM_ SG_ 1783 PrechargeTimerCounter "Precharge timer counter (10ms per count).";
+CM_ BO_ 1784 "This packet is transmitted by the BMU to show the highest and lowest voltage cells in the pack.";
+CM_ SG_ 1784 MinCellVoltage "Minimum cell voltage (mV).";
+CM_ SG_ 1784 MaxCellVoltage "Maximum cell voltage (mV).";
+CM_ SG_ 1784 MinCellVoltageCMU "CMU number that has the minimum cell voltage.";
+CM_ SG_ 1784 MinCellVoltagePosition "Cell number in CMU that is the minimum cell voltage.";
+CM_ SG_ 1784 MaxCellVoltageCMU "CMU number that has the maximum cell voltage.";
+CM_ SG_ 1784 MaxCellVoltagePosition "Cell number in CMU that is the maximum cell voltage.";
+CM_ BO_ 1785 "This packet is transmitted by the BMU to show the highest and lowest temperature cells in the pack.";
+CM_ SG_ 1785 MinCellTemperature "Minimum cell temperature (1/10th ï¿½C).";
+CM_ SG_ 1785 MaxCellTemperature "Maximum cell temperature (1/10th ï¿½C).";
+CM_ SG_ 1785 MinCellTemperatureCMU "CMU number that has the minimum cell temperature.";
+CM_ SG_ 1785 UnusedMinMaxCellTemp5 "Unused, reads as 0x00.";
+CM_ SG_ 1785 MaxCellTemperatureCMU "CMU number that has the maximum cell temperature.";
+CM_ SG_ 1785 UnusedMinMaxCellTemp7 "Unused, reads as 0x00.";
+CM_ BO_ 1786 "This packet is transmitted by the BMU to show the total pack voltage and current.";
+CM_ SG_ 1786 BatteryVoltage "Battery Voltage (mV).";
+CM_ SG_ 1786 BatteryCurrent "Battery Current (mA).";
+CM_ BO_ 1787 "This packet is transmitted by the BMU to show the status of the overall pack.";
+CM_ SG_ 1787 BalanceVoltageThresholdRising "Balance voltage threshold ï¿½ rising (balance resistor turns on).";
+CM_ SG_ 1787 BalanceVoltageThresholdFalling "Balance voltage threshold ï¿½ falling (balance resistor turns off).";
+CM_ SG_ 1787 BatteryPackStatusFlags "Status Flags (Present for backwards compatability with older software. For newer software, please view the flags in the extended battery pack status ID packet):
+0x01 = Cell Over Voltage
+0x02 = Cell Under Voltage
+0x04 = Cell Over Temperature
+0x08 = Measurement Untrusted (redundant channel mismatch)
+0x10 = CMU Communications Timeout (lost CMU)
+0x20 = Vehicle Communications Timeout (lost EVDC)
+0x40 = BMU is in Setup mode
+0x80 = CMU CAN bus power status";
+CM_ SG_ 1787 CMUCount "BMS CMU count.";
+CM_ SG_ 1787 BMUFirmwareBuildNumber "BMS BMU Firmware Build Number.";
+CM_ BO_ 1788 "This packet is transmitted by the BMU to show fan speeds and 12V power consumption.";
+CM_ SG_ 1788 FanSpeed0 "Fan speed 0 (rpm).";
+CM_ SG_ 1788 FanSpeed1 "Fan speed 1 (rpm).";
+CM_ SG_ 1788 FansContactors12VCurrent "12V current consumption of fans + contactors (mA).";
+CM_ SG_ 1788 CMU12VCurrent "12V current consumption of CMUs (mA).";
+CM_ BO_ 1789 "This packet is transmitted by the BMU to show extended pack status data.";
+CM_ SG_ 1789 ExtendedBatteryPackStatusFlags "Status Flags:
+0x00000001 = Cell Over Voltage
+0x00000002 = Cell Under Voltage
+0x00000004 = Cell Over Temperature
+0x00000008 = Measurement Untrusted (channel mismatch)
+0x00000010 = CMU Communications Timeout (lost CMU)
+0x00000020 = Vehicle Communications Timeout (lost EVDC)
+0x00000040 = BMU is in Setup mode
+0x00000080 = CMU CAN bus power status
+0x00000100 = Pack Isolation test failure
+0x00000200 = SOC measurement is not valid
+0x00000400 = CAN 12V supply is low - about to shut down
+0x00000800 = A contactor is stuck / not engaged
+0x00001000 = A CMU has detected an extra cell present";
+CM_ SG_ 1789 BMUHardwareVersion "BMU Hardware version.";
+CM_ SG_ 1789 BMUModelID "BMU Model ID.";
+CM_ SG_ 1789 UnusedExtendedBatteryPackStatus "Unused.";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 2 50000;
+BA_DEF_ BU_  "GenNodAutoGenSnd" ENUM  "No","Yes";
+BA_DEF_ BU_  "GenNodAutoGenDsp" ENUM  "No","Yes";
+BA_DEF_  "GenEnvVarEndingDsp" STRING ;
+BA_DEF_  "GenEnvVarEndingSnd" STRING ;
+BA_DEF_  "GenEnvVarPrefix" STRING ;
+BA_DEF_DEF_  "GenMsgCycleTime" 100;
+BA_DEF_DEF_  "GenNodAutoGenSnd" "Yes";
+BA_DEF_DEF_  "GenNodAutoGenDsp" "Yes";
+BA_DEF_DEF_  "GenEnvVarEndingDsp" "Dsp";
+BA_DEF_DEF_  "GenEnvVarEndingSnd" "Snd";
+BA_DEF_DEF_  "GenEnvVarPrefix" "Env";
+BA_ "GenMsgCycleTime" BO_ 1536 1000;
+BA_ "GenMsgCycleTime" BO_ 1537 1000;
+BA_ "GenMsgCycleTime" BO_ 1538 1000;
+BA_ "GenMsgCycleTime" BO_ 1539 1000;
+BA_ "GenMsgCycleTime" BO_ 1540 1000;
+BA_ "GenMsgCycleTime" BO_ 1541 1000;
+BA_ "GenMsgCycleTime" BO_ 1542 1000;
+BA_ "GenMsgCycleTime" BO_ 1543 1000;
+BA_ "GenMsgCycleTime" BO_ 1544 1000;
+BA_ "GenMsgCycleTime" BO_ 1545 1000;
+BA_ "GenMsgCycleTime" BO_ 1546 1000;
+BA_ "GenMsgCycleTime" BO_ 1547 1000;
+BA_ "GenMsgCycleTime" BO_ 1548 1000;
+BA_ "GenMsgCycleTime" BO_ 1549 1000;
+BA_ "GenMsgCycleTime" BO_ 1550 1000;
+BA_ "GenMsgCycleTime" BO_ 1551 1000;
+BA_ "GenMsgCycleTime" BO_ 1780 1000;
+BA_ "GenMsgCycleTime" BO_ 1781 1000;
+BA_ "GenMsgCycleTime" BO_ 1782 100;
+BA_ "GenMsgCycleTime" BO_ 1783 1000;
+BA_ "GenMsgCycleTime" BO_ 1784 100;
+BA_ "GenMsgCycleTime" BO_ 1785 1000;
+BA_ "GenMsgCycleTime" BO_ 1786 100;
+BA_ "GenMsgCycleTime" BO_ 1787 1000;
+BA_ "GenMsgCycleTime" BO_ 1788 1000;
+BA_ "GenMsgCycleTime" BO_ 1789 1000;
+SIG_VALTYPE_ 1780 StateOfChargeAh : 1;
+SIG_VALTYPE_ 1780 StateOfChargePercent : 1;
+SIG_VALTYPE_ 1781 BalanceStateOfChargeAh : 1;
+SIG_VALTYPE_ 1781 BalanceStateOfChargePercent : 1;
+
